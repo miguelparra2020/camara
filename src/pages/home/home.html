@@ -1,14 +1,28 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Aprende Conmigo :)
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-card>
+    <ion-card-header>
+      Tutorial Camera
+    </ion-card-header>
+
+    <ion-card-content>
+      <button ion-button color="danger" icon-right block (click)="takePicture();">
+        Tomar Foto
+        <ion-icon name="camera">
+
+        </ion-icon>
+      </button>
+
+      <img [src]="base64Image">
+    </ion-card-content>
+  </ion-card>
+  
 </ion-content>
